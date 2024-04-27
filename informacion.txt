@@ -1,0 +1,3 @@
+	nombre: Fabio Vladimir Tapia Pinto
+	sede: Cochabamba
+	codigo :54540

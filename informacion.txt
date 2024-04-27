@@ -1,0 +1,4 @@
+nombre: Roger Eduardo Laime Veliz
+codigo: 54536
+mi regional: Cochabamba
+

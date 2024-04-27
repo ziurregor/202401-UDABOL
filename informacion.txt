@@ -1,0 +1,3 @@
+nombre: Amilcar Escalera Aguayo
+codigo: 66051
+mi regional: Cochabamba

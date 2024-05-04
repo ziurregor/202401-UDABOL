@@ -1,0 +1,4 @@
+nombre: Mario Dylan Vicunia Rocabado
+codigo: 45495
+sede: La Paz
+

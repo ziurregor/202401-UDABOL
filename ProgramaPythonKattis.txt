@@ -1,0 +1,44 @@
+#PYTHON - Mendez COndori Jimmy Vladimir
+import sys
+
+while True:
+    # Pedir el tamaño del grupo
+    print("Por favor, ingrese el tamaño del grupo: ")
+    n = int(input())
+
+    # Pedir los resultados de las tiradas
+
+    print("Por favor, ingrese los resultados de las tiradas de {} participantes separados por espacios:".format(n))
+    results = [int(x) for x in input().split()]
+
+    # Crear un diccionario para almacenar la frecuencia de cada resultado
+    freq = {}
+    for result in results:
+        freq[result] = freq.get(result, 0) + 1
+
+    # Buscar el resultado más alto que solo aparece una vez
+    winner = None
+    for i, result in enumerate(results):
+        if freq[result] == 1 and (winner is None or result > results[winner]):
+            winner = i
+
+    # Imprimir el resultado
+    if winner is None:
+        print("Ningún participante tiene un resultado único.")
+    else:
+        print("El participante en la posición {} es el ganador con el resultado {}.".format(winner + 1, results[winner]))
+        
+        # Explicar qué sucede con los números duplicados
+        for result, count in freq.items():
+            if count > 1:
+                print("El resultado {} aparece {} veces y no es único.".format(result, count))
+        
+        # Justificar al ganador
+        print("El participante en la posición {} fue seleccionado porque obtuvo el resultado más alto único.".format(winner + 1))
+    
+    # Preguntar si desea volver a ejecutar el programa
+    respuesta = input("¿Desea ejecutar el programa nuevamente? (s/n): ")
+    if respuesta.lower() != 's':
+        break
+
+

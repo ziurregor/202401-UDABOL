@@ -1,1 +1,1 @@
-/c/Users/Razgri/Downloads/planetaris.py
+/c/Users/Razgri/Desktop/ProgramaKattis.txt

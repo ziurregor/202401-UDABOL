@@ -1,0 +1,13 @@
+John es un estudiante que trabaja como barista a tiempo parcial en la micrococina del departamento de su escuela. Opera la máquina de café expreso en la cocina para preparar café expreso y café con leche para los estudiantes que buscan energía para estudiar.
+
+Hoy hay n Los estudiantes vienen a la micrococina para hacer un pedido. Un pedido se indica con un número de trago de espresso. x oscilando entre 1 y 4
+, y una letra L opcional que indica que el estudiante quiere tener un x-Chupito de café con leche. Por ejemplo, un orden 2 significa un 2-shot espresso, y un pedido de 3L significa un 3-Chupito de café con leche. haciendo un x-shot espresso consume x onzas de agua. Para preparar un café con leche se requiere vaporizar la leche y se consume una onza adicional de agua; por ejemplo, hacer un 3-shot latte consume 4 onzas de agua. La máquina de café espresso de la micrococina tiene un depósito de agua de 
+S onzas que está lleno al comienzo del día. John rellena el tanque de agua para 
+S onzas cada vez que el agua restante en el tanque no sea suficiente para cumplir con el pedido del siguiente estudiante. Juan cumple el n pedidos uno por uno sin cambiar su orden.
+
+¿Cuántas veces tiene Juan que rellenar el tanque de agua hoy para poder servir a todos los n ¿estudiantes?. Aporte
+La primera línea de entrada tiene dos números enteros. n(1<=n<=100) y S(10<=S<=200). El siguiente n Cada línea contiene un dígito entre 1 y 4
+seguido de una letra L opcional para describir un pedido. Las órdenes deben cumplirse en el orden dado tal como aparecen en la entrada.
+
+Producción
+Muestra el número de veces que John tiene que rellenar el tanque de agua de la máquina de café expreso.

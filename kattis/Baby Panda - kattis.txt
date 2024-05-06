@@ -1,0 +1,35 @@
+Baby Panda 
+Alex esta cuidando a un panda bebe que parece ser olfateo inusual. Todos los días, el panda bebe puede estornudar cero o una baba (s) en su recinto; todas las noches, todos limos presentes en el recinto dividido, de modo que el numero de los limos se duplican de la noche a la mañana. Alex coloca al bebe panda en un recinto limpio con 0 slimes al comienzo del dia 1 y observa que al final de la noche (n) hay (m) babas en el bebe recinto del panda. 
+Esta preocupada por el panda bebe y quiere saber el numero de veces que el panda bebe estornudo un baba sobre estos (n) Dias.
+
+Entrada 
+La unica linea de entrada contiene los enteros separados por espacios n,m(1 ≤ n ≤ 10^18, 0 ≤ m ≤ 10^18, m es par), donde n es el numero de días y m es el numero de slimes presentes después de la noche n.
+
+Salida 
+En una sola linea, genere el numero de veces que el bebe Panda estornudo una baba. 
+
+
+babypanda.py
+
+Importar matemáticas
+Importar sys
+
+_, m = map(int, input().partir())
+Si m == 0:
+    imprimir(0)
+    sys.exit(0)
+
+panda = 1
+mientras que no matemáticas. log2(m).is_integer():
+    L2 = Matemáticas. log2(m)
+    m -= 2**matemáticas.Piso(L2)
+    Panda += 1
+
+print(panda)
+
+
+
+
+Imagen de kattis - bebe panda -ACEPTADO - 2.3 
+
+http://icecream.me/fc28e2e6e2ef885b9f3d1042ed0e4107 

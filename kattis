@@ -1,1 +1,51 @@
+package alfiles;
+import java.util.Scanner;
+public class alfilesobispo{
+    private Scanner teclado;
+    private int[][] mat;
+    private int x;
+    
+    public void cargar() {
+        teclado=new Scanner(System.in);
+        System.out.print("Cuantas fila tiene el tablero:");
+        int filas=teclado.nextInt();
+        System.out.print("Cuantas columnas tiene el tablero:");
+        int columnas=teclado.nextInt();
+        mat=new int[filas][columnas];
+        for(int f=0;f<mat.length;f++) {
+            for(int c=0;c<mat[f].length;c++) {
+            	x=f+c;
+            	x=x%2;
+            	mat[f][c]=x;
+            	
+                }
+               
+            }
+        System.out.println();
+        }
+    
+    
+    public void imprimir() {
+        for(int f=0;f<mat.length;f++) {
+            for(int c=0;c<mat[f].length;c++) {
+                System.out.print(mat[f][c]+" ");
+            }
+            System.out.println();
+            
+        }
+        if(x==0) {
+        	x=1;
+        }
+        System.out.println();
+        System.out.print("alfiles maximos: "+x*2);
+    }
+    
+    
+    public static void main(String[] ar) {
+        alfilesobispo ma=new alfilesobispo();
+        ma.cargar();
+        ma.imprimir();
+    }   
+}
+
 

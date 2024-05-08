@@ -1,0 +1,2 @@
+El problema SumOfTheOthers consiste en ingresar un arreglo en el cual uno de los numeros
+es el resultado de la suma de los restantes y el programa debe hallar cual es dicho numero.

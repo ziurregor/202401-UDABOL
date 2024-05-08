@@ -4,20 +4,37 @@ public class alfilesobispo{
     private Scanner teclado;
     private int[][] mat;
     private int x;
+    private int y;
+    private int m;
+    private int n;
     
     public void cargar() {
         teclado=new Scanner(System.in);
         System.out.print("Cuantas fila tiene el tablero:");
         int filas=teclado.nextInt();
+        m=filas-1;
         System.out.print("Cuantas columnas tiene el tablero:");
         int columnas=teclado.nextInt();
+        n=columnas-1;
         mat=new int[filas][columnas];
         for(int f=0;f<mat.length;f++) {
-            for(int c=0;c<mat[f].length;c++) {
-            	x=f+c;
-            	x=x%2;
+            for(int c=0;c<mat[f].length;c++) 
+            	if(f==m)
+                {
+            		if(c==n) {
+            			mat[f][c]=0;
+            			x=x-1;
+            		}
+            		else {
+            			x=c+f;
+                    	mat[f][c]=x;
+                    	x++;
+            		}	
+                }
+            	else{
+            	x=c+f;
             	mat[f][c]=x;
-            	
+            	x++;
                 }
                
             }
@@ -28,18 +45,26 @@ public class alfilesobispo{
     public void imprimir() {
         for(int f=0;f<mat.length;f++) {
             for(int c=0;c<mat[f].length;c++) {
-                System.out.print(mat[f][c]+" ");
-            }
+            	y=mat[f][c];
+            	if(y>=10) {
+            		System.out.print(mat[f][c]+"  ");
+            	}
+            	else {
+                System.out.print(mat[f][c]+"   ");
+            	}
+                }
             System.out.println();
-            
-        }
-        if(x==0) {
-        	x=1;
-        }
+            }
+                
         System.out.println();
-        System.out.print("alfiles maximos: "+x*2);
+        if(m==n) {
+        	System.out.print("alfiles maximos: "+(x+1));
+        }
+        else {
+        	System.out.print("alfiles maximos: "+x);
+        }
     }
-    
+   
     
     public static void main(String[] ar) {
         alfilesobispo ma=new alfilesobispo();
@@ -47,5 +72,3 @@ public class alfilesobispo{
         ma.imprimir();
     }   
 }
-
-

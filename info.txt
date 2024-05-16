@@ -1,0 +1,4 @@
+mi nombre es: jose gustavo rios perez 
+mi codigo es 65746
+region: oruro
+

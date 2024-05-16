@@ -1,4 +1,3 @@
-//diego fuentes niño de guzman 48490
 <?php
 
 function suma($a, $b, $c) {
